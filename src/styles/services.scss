@@ -1,0 +1,211 @@
+.services {
+    text-align: center;
+}
+.services__top__corner_left {
+    width: 150px;
+}
+.services__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.services__top__corner_right {
+    width: 150px;
+    transform: rotate(90deg);
+}
+.services__top__title {
+    font-weight: 700;
+    font-size: 48px;
+}
+.services__list__title {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.services__list__list {
+    list-style: disc;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.services__list__img {
+    width: 890px;
+    margin-bottom: 50px;
+}
+.services__middle {
+    width: 100%;
+    background-color: #3BA79A;
+}
+.services__middle__title {
+    padding-top: 60px;
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+.services__middle__list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+.first_block {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.second_block {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.services__middle__list__item {
+    width: 230px;
+    text-align: left;
+    font-size: 20px;
+}
+.services__middle__list__item__img {
+    width: 230px;
+    height: 180px;
+}
+.services__footer__title {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.services__footer__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.services__footer__list__item__img {
+    width: 290px;
+}
+.services__footer__list__item {
+    text-align: center;
+    p {
+        font-size: 20px;
+    }
+}
+.services__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.services__bottom__corner_left {
+    width: 150px;
+    transform: rotate(270deg);
+}
+.services__bottom__corner_right {
+    width: 150px;
+    transform: rotate(180deg);
+}
+@media (max-width:990px){
+    .services__middle__list {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: none;
+    }
+    .first_block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .second_block {
+        width: 100%;
+    }
+    .services__list__img {
+        width: 600px;
+    }
+    .services__footer__list__item:nth-child(2){
+        padding-top: 250px;
+        position: absolute;
+    }
+    .services__bottom {
+        margin-top: 250px;
+    }
+    .services__list__list {
+        font-size: 25px;
+    }
+}
+@media (max-width: 700px) {
+    .services__top__title {
+        font-size: 30px;
+    }
+    .services__list__title {
+        font-size: 22px;
+    }
+    .services__list__list {
+        font-size: 18px;
+    }
+    .services__top__corner_right {
+        width: 100px;
+    }
+    .services__top__corner_left {
+        width: 100px;
+    }
+    .services__bottom__corner_left {
+        width: 100px;
+    }
+    .services__bottom__corner_right {
+        width: 100px;
+    }
+    .services__list__img {
+        width: 450px;
+    }
+    .first_block {
+        display: block;
+    }
+    .second_block {
+        display: block;
+    }
+    .services__middle__list__item {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        width: 300px;
+    }
+    .services__middle__list__item__img {
+        width: 300px;
+        height: 230px;
+    }
+    .services__middle__list {
+        padding-bottom: 20px;
+        p {
+            font-size: 24px;
+        }
+    }
+    .services__footer__list__item:nth-child(2){
+        padding-top: 0px;
+        position: relative;
+    }
+    .services__footer__list__item {
+        margin-bottom: 50px;
+        p {
+            font-size: 24px;
+        }
+    }
+    .services__footer__list {
+        display: block;
+    }
+    .services__bottom {
+        margin-top: 0px;
+    }
+}
+@media (max-width: 500px){
+    .services__list__img{
+        width: 350px;
+    }
+    .services__list__title {
+        font-size: 22px;
+    }
+    .services__list__list {
+        font-size: 18px;
+    }
+    .services__list__title {
+        font-size: 20px;
+    }
+    .services__list__list {
+        font-size: 14px;
+    }
+}

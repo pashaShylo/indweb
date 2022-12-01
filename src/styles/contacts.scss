@@ -1,0 +1,201 @@
+.contacts {
+    text-align: center;
+}
+.contacts__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts__top__corner_left {
+    width: 150px;
+}
+.contacts__top__corner_right {
+    width: 150px;
+    transform: rotate(90deg);
+}
+.contacts__top__title {
+    font-weight: 700;
+    font-size: 48px;
+}
+.contacts__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts__bottom__corner_left {
+    width: 150px;
+    transform: rotate(270deg);
+}
+.contacts__bottom__corner_right {
+    width: 150px;
+    transform: rotate(180deg);
+}
+.contacts__map {
+    width: 80%;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lds-ring {
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 300px;
+    margin-top: 50px;
+  }
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin: 8px;
+    border: 10px solid #242582;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #242582 transparent transparent transparent;
+  }
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+.contacts__title {
+    text-decoration: underline;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+.contacts__block {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.contacts__block__list__item {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    div {
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        height: 100%;
+    }
+    a{
+        color: black;
+    }
+}
+.contacts__block__list__item__top {
+    margin-top: 20px;
+}
+.contacts__block__list__item__bottom {
+    padding-top: 10px;
+}
+.contacts__block__list {
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+@keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+@media (max-width:990px){
+    .contacts__block{
+        height: 220px;
+    }
+    .contacts__block__list__item:nth-child(2) {
+        position: absolute;
+        margin-top: 100px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    .contacts__map {
+        height: 400px;
+    }
+    .lds-ring {
+        height: 400px;
+        width: 200px;
+        margin-top: 50px;
+    }
+    .lds-ring div {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (max-width: 700px){
+    .contacts__top__corner_right {
+        width: 100px;
+    }
+    .contacts__top__corner_left {
+        width: 100px;
+    }
+    .contacts__bottom__corner_left {
+        width: 100px;
+    }
+    .contacts__bottom__corner_right {
+        width: 100px;
+    }
+    .contacts__top__title {
+        font-size: 30px;
+    }
+}
+@media (max-width:650px){
+    .contacts__map {
+        height: 350px;
+    }
+    .contacts__block__list {
+        display: block;
+    }
+    .contacts__block__list__item:nth-child(2) {
+        position: relative;
+        margin-top: 0;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        left: auto;
+        right: auto;
+    }
+    .contacts__block__list__item {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contacts__block__list {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .contacts__block {
+        height: fit-content;
+    }
+}
+@media (max-width:500px) {
+    .contacts__map {
+        height: 250px;
+    }
+    .lds-ring {
+        height: 400px;
+        width: 150px;
+        margin-top: 50px;
+    }
+    .lds-ring div {
+        width: 150px;
+        height: 150px;
+    }
+}

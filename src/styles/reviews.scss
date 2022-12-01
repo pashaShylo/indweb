@@ -1,0 +1,119 @@
+.reviews {
+    text-align: center;
+}
+.reviews__top__corner_left {
+    width: 150px;
+}
+.reviews__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews__top__title {
+    font-weight: 700;
+    font-size: 48px;
+}
+.reviews__top__corner_right {
+    width: 150px;
+    transform: rotate(90deg);
+}
+.reviews__review1 {
+    background-color: #3BA79A;
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+.reviews__review2 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8BA73B;
+    display: flex;
+    text-align: left;
+}
+.reviews__review3 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A73B3B;
+    display: flex;
+    text-align: left;
+}
+.reviews__review4 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8B3BA7;
+    display: flex;
+    text-align: left;
+}
+.reviews__shrek1 {
+    margin-bottom: -35px;
+    margin-left: 40%;
+}
+.reviews__shrek2 {
+    margin-bottom: -35px;
+    margin-right: 40%;
+}
+.reviews__review__img {
+    margin: 30px;
+    width: 225px;
+    height: 225px;
+}
+.reviews__review__text__title {
+    color: white;
+    font-size: 35px;
+    margin-top: 30px;
+}
+.reviews__review__text__paragraph {
+    color: white;
+    font-size: 25px;
+    margin-top: 30px;
+}
+.reviews__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews__bottom__corner_left {
+    width: 150px;
+    transform: rotate(270deg);
+}
+.reviews__bottom__corner_right {
+    width: 150px;
+    transform: rotate(180deg);
+}
+@media(max-width:700px){
+    .reviews__shrek1 {
+        width: 200px;
+        margin-bottom: -25px;
+    }
+    .reviews__shrek2 {
+        margin-bottom: -25px;
+        width: 200px;
+    }
+    .reviews__top__corner_right {
+        width: 100px;
+    }
+    .reviews__top__corner_left {
+        width: 100px;
+    }
+    .reviews__bottom__corner_left {
+        width: 100px;
+    }
+    .reviews__bottom__corner_right {
+        width: 100px;
+    }
+    .reviews__top__title {
+        font-size: 30px;
+    }
+}
+@media (max-width: 600px){
+    .reviews__review__img {
+        margin: 20px;
+        width: 185px;
+        height: 185px;
+    }
+}

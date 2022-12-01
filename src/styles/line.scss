@@ -1,0 +1,31 @@
+.line {
+    z-index: 1;
+    width: 80%;
+    height: 4px;
+    background: #CD7F32;
+    top: 70px;
+    position: sticky;
+    margin: auto;
+    transition: 1s;
+    border-radius: 3px;
+    opacity: .95;
+}
+.line_after {
+    z-index: 1;
+    width: 100%;
+    height: 4px;
+    background: #CD7F32;
+    top: 70px;
+    position: sticky;
+    margin: auto;
+    transition: 1s;
+    opacity: .95;
+}
+@media(max-width:700px) {
+    .line{
+        top: 50px;
+    }
+    .line_after {
+        top: 50px;
+    }
+}

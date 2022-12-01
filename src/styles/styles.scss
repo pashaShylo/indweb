@@ -1,0 +1,37 @@
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'line';
+@import 'services';
+@import 'contacts';
+@import 'reviews';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "GothicShrek";
+    src: url("../Angel.ttf");
+}
+body {
+    background: #EDFFF2;
+    font-family: 'GothicShrek', sans-serif;
+    height: 100%;
+}
+._container {
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width:1200px) {
+    ._container {
+        max-width: 970px;
+    }
+}
+@media screen and (max-width:990px){
+    ._container {
+        max-width: 800px;
+    }
+}
